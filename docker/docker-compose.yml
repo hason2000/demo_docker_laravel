@@ -12,7 +12,6 @@ services:
       - ../hapoLearn:/var/www/html
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
   php:
-    image: sonhv/php-hapo:v1.0
     build: 
       context: ./
       dockerfile: Dockerfile
